@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Git-uppgift</title>
+  </head>
+  <body>
+    <h1>Git-uppgift</h1>
+    <div class="container"></div>
+
+    <script>
+      // TODO 1: Returnera ditt eget namn (just nu returneras "TODO").
+      function hamtaNamn(name) {
+        return name;
+      }
+
+      // TODO 2: Returnera summan av a och b (just nu returneras alltid 0).
+      function addera(a, b) {
+       return Number(a) + Number(b) 
+      
+      }
+
+      // TODO 3: Returnera "ok" om talet är större än 10, annars "för låg".
+      function statusForTal(tal) {
+        if(Number(tal) > 10) return "ok"
+        else return "för låg"
+      }
+
+      console.log(hamtaNamn("Louie"))
+      console.log(addera(22,20))
+      console.log(statusForTal(11))
+    </script>
+  </body>
+</html>
