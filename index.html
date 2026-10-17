@@ -11,7 +11,13 @@
     <script>
         const container = document.querySelector(".container")
         const myName = document.createElement("h2")
-       
+        const summa = document.createElement("h3")
+        summa.textContent = `Summa: ${addera(6,6)}`
+        container.appendChild(summa)
+        const talStatus = document.createElement("p")
+        talStatus.textContent = statusForTal(15)
+        container.appendChild(talStatus)
+
       function hamtaNamn(name) {
          myName.textContent = name;
         container.appendChild(myName)
@@ -26,9 +32,7 @@
         if(Number(tal) > 10) return "ok"
         else return "för låg"
       }
-      hamtaNamn("Louie Stokk")
-      console.log(addera(23,20))
-      console.log(statusForTal(9))
+     
     </script>
   </body>
 </html>
